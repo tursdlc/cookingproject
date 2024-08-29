@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class CookingAppConfig(AppConfig):
+class RecipesAppConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'cooking_app'
+    name = 'recipes_app'
