@@ -55,11 +55,11 @@ Este es el repositorio del backend para proporcionar una API REST que permite al
    python manage.py runserver
 
 
-##Configuración de CORS
+## Configuración de CORS
 
 Para permitir que el frontend acceda a la API, debes configurar el middleware de CORS en settings.py:
 
-###settings.py
+### settings.py
 INSTALLED_APPS = [
  'corsheaders',
     'rest_framework',
@@ -71,7 +71,7 @@ MIDDLEWARE = [
     
 ]
 
-###Permitir solicitudes del frontend de React
+### Permitir solicitudes del frontend de React
 CORS_ALLOW_ALL_ORIGINS = True  # Para desarrollo
 
 
