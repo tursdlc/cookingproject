@@ -16,11 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from rest_framework.documentation import include_docs_urls
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('recipes_app.urls')),
-    path('', include('users_app.urls'))
-
+    path('recipes', include('recipes_app.urls')),
+    path('users', include('users_app.urls')),
+    path(r'docs/', include_docs_urls(title='Api documentation'))
 ]

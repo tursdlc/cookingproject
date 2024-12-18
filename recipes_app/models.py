@@ -4,6 +4,7 @@ from users_app.models import User
 
 # Create your models here.
 class Recipe(models.Model):
+    id = models.AutoField(primary_key=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE, default=None, null=True)
     title = models.CharField(max_length=30)
     description = models.TextField(blank=True, null=True)
